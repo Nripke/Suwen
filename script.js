@@ -1,4 +1,4 @@
-var dateDay = 0;
+var dateDay = -1;
 //var favorites = [];
 var messages = ["Suwen, I love you so much. You are so beautiful, don't stop being yourself!",
 "You're a light that shines so bright Suwen, I love you.", "Remember when you said your hand was cold in Paris hehehe.",
@@ -45,7 +45,7 @@ function load()
     var savedata = JSON.parse(localStorage.getItem("save"));
 
     //if (typeof savedata.favorites !== "undefined" && savedata.favorites !== null) {favorites = savedata.favorites;}else {favorites = [];}
-    if (typeof savedata.dateDay !== "undefined") {dateDay = savedata.dateDay;}else {dateDay = 0;}
+    if (typeof savedata.dateDay !== "undefined") {dateDay = savedata.dateDay;}else {dateDay = -1;}
     if (typeof savedata.allGivenMessages !== "undefined" && savedata.allGivenMessages !== null) {allGivenMessages = savedata.allGivenMessages;}else {allGivenMessages = [];}
     if (typeof savedata.totalClicks !== "undefined" && savedata.totalClicks !== null) {totalClicks = savedata.totalClicks;}else {totalClicks = 0;}
     if (typeof savedata.allLove !== "undefined" && savedata.allLove !== null) {allLove = savedata.allLove;}else {allLove = [];}
