@@ -60,7 +60,7 @@ function load()
 
 function reset()
 {
-    dateDay = 0;
+    dateDay = -1;
     //favorites = [];
     allGivenMessages = [];
     totalClicks = 0;
