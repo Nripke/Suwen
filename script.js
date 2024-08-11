@@ -1,5 +1,5 @@
 var dateDay = 0;
-var favorites = [];
+//var favorites = [];
 var messages = ["Suwen, I love you so much. You are so beautiful, don't stop being yourself!",
 "You're a light that shines so bright Suwen, I love you.", "Remember when you said your hand was cold in Paris hehehe.",
 "You are so smart Suwen, go be an academic weapon today.", "Wait, are you ok? Looks like you just fell from heaven ;)",
@@ -28,7 +28,7 @@ function save()
 {
     //Dictionary of variables
     var save = {
-        favorites: favorites,
+        //favorites: favorites,
         dateDay: dateDay,
         allGivenMessages: allGivenMessages,
         totalClicks: totalClicks,
@@ -44,7 +44,7 @@ function load()
 {
     var savedata = JSON.parse(localStorage.getItem("save"));
 
-    if (typeof savedata.favorites !== "undefined" && savedata.favorites !== null) {favorites = savedata.favorites;}else {favorites = [];}
+    //if (typeof savedata.favorites !== "undefined" && savedata.favorites !== null) {favorites = savedata.favorites;}else {favorites = [];}
     if (typeof savedata.dateDay !== "undefined") {dateDay = savedata.dateDay;}else {dateDay = 0;}
     if (typeof savedata.allGivenMessages !== "undefined" && savedata.allGivenMessages !== null) {allGivenMessages = savedata.allGivenMessages;}else {allGivenMessages = [];}
     if (typeof savedata.totalClicks !== "undefined" && savedata.totalClicks !== null) {totalClicks = savedata.totalClicks;}else {totalClicks = 0;}
@@ -61,7 +61,7 @@ function load()
 function reset()
 {
     dateDay = 0;
-    favorites = [];
+    //favorites = [];
     allGivenMessages = [];
     totalClicks = 0;
     allLove = [];
