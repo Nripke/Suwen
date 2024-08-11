@@ -1,0 +1,128 @@
+body {
+    /* Set the initial background color */
+    background: rgb(216, 76, 216); /*linear-gradient(0deg, pink, rgb(216, 76, 216));
+    /* Set the animation */
+    /* animation: backgroundAnimation 20s infinite alternate;
+    /* Ensure the body covers the full height */
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .date-text
+  {
+    position: absolute;
+    font-family: 'Lilita One', 'Noto Serif', 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #faecf1;
+    text-align: center;
+    text-shadow: 3px 3px 5px black;
+    width: 50%;
+    margin-top: 0px;
+    top: 50px;
+  }
+
+  .message-text {
+    font-family: 'Lilita One', 'Noto Serif', 'Pacifico', cursive;
+    font-size: 3rem;
+    color: #faecf1;
+    text-align: center;
+    text-shadow: 3px 3px 5px black;
+    width: 50%;
+    margin: 0 auto;
+    animation: wiggle 3s infinite;
+  }
+
+  .left-arrow
+  {
+    position: absolute;
+    left: 15%;
+    cursor: pointer;
+    scale: 0.25;
+  }
+
+  .right-arrow
+  {
+    position: absolute;
+    right: 15%;
+    scale: 0.25;
+    rotate: 180deg;
+    cursor: pointer;
+  }
+
+  .heart-box
+  {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  #heart-button
+  {
+    max-width: 100%; /* Ensures the image doesn't exceed the width of its container */
+    max-height: 100px; /* Restricts the height of the image */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    margin: 0 auto; /* Centers the image within the div */
+    animation: expand 1s infinite;
+    cursor: pointer;
+  }
+
+  #love-percent
+  {
+    margin-top:20px;
+    font-family: 'Lilita One', 'Noto Serif', 'Pacifico', cursive;
+    text-shadow: 3px 3px 5px black;
+    font-size: 1.5rem;
+    color: #faecf1;
+  }
+
+  .page-header {
+    width: 100%;
+    background-color: rgb(128, 35, 128); /* Green background */
+    color: #faecf1; /* White text */
+    text-align: center; /* Centered text */
+    font-family: 'Lilita One', 'Noto Serif', 'Pacifico', cursive;
+    text-shadow: 3px 3px 5px black;
+    font-size: 1.5rem;
+    padding: 20px 0; /* Padding above and below the text */
+    position: fixed; /* Fixes the header to the top */
+    top: 0; /* Ensures it stays at the top */
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  @keyframes backgroundAnimation {
+    0% {
+      background: pink;
+    }
+    100% {
+      background: rgb(216, 76, 216);
+    }
+  }
+  
+  @keyframes wiggle {
+    0% {
+      transform: rotate(-2deg);
+    }
+    50% {
+      transform: rotate(2deg);
+    }
+    100% {
+      transform: rotate(-2deg);
+    }
+}
+
+@keyframes expand {
+    0%, 100% {
+      transform: scale(1); /* Original size */
+    }
+    50% {
+      transform: scale(1.1); /* Expanded size */
+    }
+}
